@@ -5,3 +5,4 @@
 - **Pertemuan 5** → [CSS Lanjutan - Latihan 2](/Pertemuan%205/)
 - **Pertemuan 6** → [CSS Framework - Bootstrap](/Pertemuan%206/)
 - **Pertemuan 7** → [Javascript](/Pertemuan%207/)
+- **UTS** → [To-Do List](/UTS/)

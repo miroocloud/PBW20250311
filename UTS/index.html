@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Daily Journal</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="light">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Daily Journal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./todo.html">To-Do List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#article">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <button id="btn-dark" type="button" class="btn btn-dark">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <button id="btn-light" type="button" class="btn btn-danger">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Hero -->
+  <section id="hero" class="hero text-center text-sm-start p-5 bg-danger-subtle">
+    <div class="container">
+      <div class="d-sm-flex flex-sm-row-reverse align-items-center">
+        <img src="img/peter-thomas-FbYZAV_0VuU-unsplash.jpg" class="img-fluid" width="300"
+          alt="Hero Image by Peter Thomas" />
+        <div>
+          <h1 class="fw-bold display-4">
+            Create Memories, Save, Memories, Everyday
+          </h1>
+          <h4 class="lead display-6">
+            Mencatat semua kegiatan sehari - hari yang ada tanpa terkecuali
+          </h4>
+          <div class="mt-4">
+            <span id="tanggal"></span>
+            <span id="jam"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+  <!-- Article -->
+  <section id="article" class="text-center p-5">
+    <div class="container">
+      <h1 class="fw-bold display-4 pb-3">Article</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="col">
+          <a href="https://medium.com/front-end-weekly/why-next-js-leads-the-future-of-web-development-in-2025-eb1a52a3931e"
+            class="text-decoration-none">
+            <div class="card h-100">
+              <img src="img/1_Qw3FCHanEYywgPqiv38jhA.webp" class="card-img-top" width="300" height="300"
+                alt="Next.js Logo" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mengapa Next.js Merupakan Framework Masa Depan
+                </h5>
+                <p class="card-text">
+                  Next.js telah menjadi framework pilihan utama bagi
+                  pengembang yang ingin membangun aplikasi web modern, berkat
+                  fitur-fitur seperti rendering sisi server dan integrasi yang
+                  mudah dengan API.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 1 hour ago</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://medium.com/@john_ross/react-server-components-3f535d0a323e" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="img/1_Ch9hKYS1BQjf756gpswQYg.webp" class="card-img-top" width="300" height="300"
+                alt="React Server Components" />
+              <div class="card-body">
+                <h5 class="card-title">Mengenal React Server Components</h5>
+                <p class="card-text">
+                  React Server Components (RSC) memberikan pendekatan baru
+                  dalam membangun aplikasi React yang lebih cepat dan efisien
+                  dengan membagi beban antara server dan klien secara optimal.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 2 hours ago</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.silicontechsolutions.in/post/understanding-vite-the-next-generation-frontend-tooling"
+            class="text-decoration-none">
+            <div class="card h-100">
+              <img src="img/e47c3a_4e56d584be654991a21b32ad9cb1fa90~mv2.avif" class="card-img-top" width="300"
+                height="300" alt="Vite Frontend Tooling" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mengenal Vite: Tooling Modern untuk Front-End
+                </h5>
+                <p class="card-text">
+                  Vite merupakan build tool yang dikembangkan untuk
+                  menggantikan Webpack, menawarkan proses pengembangan yang
+                  lebih cepat dan efisien melalui hot module replacement dan
+                  pre-bundling berbasis ES Modules.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 30 mins ago</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Article -->
+  <!-- Gallery -->
+  <section id="gallery" class="text-center p-5 bg-danger-subtle">
+    <h1 class="fw-bold display-4 pb-3">Gallery</h1>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/aleksandr-popov-KWA302HCx1o-unsplash.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/virginia-marinova-iyI6uvubKJQ-unsplash.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/bryan-brittos-kNNJAN2jpTI-unsplash.jpg" class="d-block w-100" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- End Gallery -->
+  <!-- Footer -->
+  <footer class="text-center my-4">
+    <!-- div icon -->
+    <div>
+      <a href="https://www.instagram.com" class="h2 p-2 text-decoration-none">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com" class="h2 p-2 text-decoration-none">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://wa.me/yourphonenumber" class="h2 p-2 text-decoration-none">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- div copyright -->
+    <div class="mt-2">
+      <small>M. Farid H.N © 2025. All rights reserved.</small>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function tampilWaktu() {
+        var waktu = new Date();
+        var bulan = waktu.getMonth() + 1;
+
+        setTimeout(tampilWaktu, 1000);
+        document.getElementById('tanggal').innerHTML = `${waktu.getDate()}/${bulan}/${waktu.getFullYear()} `;
+        document.getElementById('jam').innerHTML = `${waktu.getHours()}:${waktu.getMinutes()}:${waktu.getSeconds()}`;
+      }
+
+      setTimeout(tampilWaktu, 1000);
+
+      // Dark mode
+      document.getElementById('btn-dark').addEventListener('click', function () {
+        document.documentElement.setAttribute('data-bs-theme', 'dark');
+        // Hero section
+        document.getElementById('hero').classList.add('bg-secondary');
+        document.getElementById('hero').classList.remove('bg-danger-subtle');
+        // Gallery section
+        document.getElementById('gallery').classList.add('bg-secondary');
+        document.getElementById('gallery').classList.remove('bg-danger-subtle');
+      });
+
+      // Light mode
+      document.getElementById('btn-light').addEventListener('click', function () {
+        document.documentElement.setAttribute('data-bs-theme', 'light');
+        // Hero section
+        document.getElementById('hero').classList.add('bg-danger-subtle');
+        document.getElementById('hero').classList.remove('bg-secondary');
+        // Gallery section
+        document.getElementById('gallery').classList.add('bg-danger-subtle');
+        document.getElementById('gallery').classList.remove('bg-secondary');
+      });
+    });
+  </script>
+</body>
+
+</html>
